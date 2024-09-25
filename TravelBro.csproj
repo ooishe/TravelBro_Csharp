@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F5706C0-701F-42ED-9405-3D31FB57C2D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TravelBro</RootNamespace>
+    <AssemblyName>TravelBro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutus.Designer.cs">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agencyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agencyLogin.Designer.cs">
+      <DependentUpon>agencyLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agencysignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agencysignup.Designer.cs">
+      <DependentUpon>agencysignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agency_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agency_home.Designer.cs">
+      <DependentUpon>agency_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\agency_customer_view_cntrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\agency_customer_view_cntrl.Designer.cs">
+      <DependentUpon>agency_customer_view_cntrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\customer_package_ucontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\customer_package_ucontrol.Designer.cs">
+      <DependentUpon>customer_package_ucontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_prepack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_prepack.Designer.cs">
+      <DependentUpon>customer_prepack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agency_customer_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agency_customer_view.Designer.cs">
+      <DependentUpon>agency_customer_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customPack.Designer.cs">
+      <DependentUpon>customPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPass.Designer.cs">
+      <DependentUpon>forgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoice.Designer.cs">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPage.Designer.cs">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelBroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelBroDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aboutus.resx">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agencyLogin.resx">
+      <DependentUpon>agencyLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agencysignup.resx">
+      <DependentUpon>agencysignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agency_home.resx">
+      <DependentUpon>agency_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\agency_customer_view_cntrl.resx">
+      <DependentUpon>agency_customer_view_cntrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\customer_package_ucontrol.resx">
+      <DependentUpon>customer_package_ucontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_prepack.resx">
+      <DependentUpon>customer_prepack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agency_customer_view.resx">
+      <DependentUpon>agency_customer_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customPack.resx">
+      <DependentUpon>customPack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPass.resx">
+      <DependentUpon>forgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoice.resx">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPage.resx">
+      <DependentUpon>PaymentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TravelBroDataSet.xsc">
+      <DependentUpon>TravelBroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TravelBroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelBroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelBroDataSet.xss">
+      <DependentUpon>TravelBroDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admindashh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agencysignup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agencysignup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepageNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepageNewnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agencyLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminLoginNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agency_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_prepack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uiser bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotpass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tr.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
