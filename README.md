@@ -13,11 +13,6 @@ Before starting, ensure you have the following installed:
  
 ## Get Started
  
-### Clone the Repository
- 
-Obtain your own copy of the project with:
-
- 
 ### Database Configuration
  
 **Database Setup Instructions:**
@@ -258,83 +253,32 @@ Make sure the connection string is set up properly to ensure smooth communicatio
 ### User Features
  
 - **Sign Up & Login / Logout:**
-   - Users can create a new account, log in, log out, and access their personalized dashboard for managing travel plans.
+   - Users can create a new account, log in, log out.
    - Password management includes change and recovery options like "Forgot Password."
  
 - **Travel Package Browsing:**
-   - Users can browse available travel packages and add them to their wishlist or directly proceed to booking.
+   - Users can browse available travel packages and directly proceed to booking.
    - After selecting a package, users can review the itinerary, details, and pricing before confirming the booking.
  
 - **Booking and Payment:**
    - Multiple payment methods are available, including bKash, Nagad, Rocket, and Banking.
    - On booking confirmation, users can see the total bill and complete their payment.
   
+
  
-- **Booking History:**
-   - Users can view their booking history, track past trips, and review travel packages they previously booked.
- 
-- **Additional Features:**
-   - Users can request customized travel packages, see current offers, and access important information like travel destinations, contacts, and agency details.
  
 ### Admin Features
  
-- **Department & Employee Management:**
-   - Admins can add new departments and manage employees within each department, including adding employee details like name, ID, daily salary, date of birth, and joining date
- 
-- **Salary Management:**
-   - Admins can calculate and pay employee salaries based on their daily wage and the number of days attended.
-  
+
  - **Travel Package Management:**
-   - Admins can create, edit, and delete travel packages, manage pricing, availability, and assign specific tour guides or representatives to different packages.
+   - Admins can view and search customer, agency, package information and se overview of the whole system.
   
 ## Technology Used
  
 - **[C#](https://learn.microsoft.com/en-us/dotnet/csharp/):** A versatile programming language for the .NET platform, used for developing a wide range of applications.
 - **[.NET Framework](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet-framework):** A comprehensive developer platform for building various types of applications across different operating systems.
  
-### Q4 2024
- 
-1. **Feature Enhancements:**
-   - Expand the Booking System to include additional payment methods and integrate detailed analytics for bookings, transactions, and revenue.
-   - Enhance the User Dashboard with advanced tools for managing bookings, tracking trip history, and viewing itinerary details.
-      
- 
-2. **Admin Features:**
-   - Implement advanced Employee Management tools, including performance tracking and automated attendance reports.
-   - Add functionality for Department and Employee Reports to generate summaries and insights for better internal management.
- 
-3. **User Experience Improvements:**
-   - Refine the User Interface based on customer feedback to improve usability and accessibility.
-   - Optimize the Navigation System and user journey for faster and smoother interactions.
- 
-### Q1 2025
- 
-4. **Mobile Compatibility:**
-   - Develop a Responsive Design to ensure compatibility with mobile devices and tablets.
-   - Explore the potential for a Mobile App to improve accessibility and booking convenience on the go.
- 
-5. **Security Enhancements:**
-   - Strengthen **Data Security** with advanced encryption and secure authentication practices.
-   - Conduct a **Security Audit** to identify and mitigate potential vulnerabilities in the system.
- 
-6. **Performance Optimization:**
-   - Improve the **Performance** of the booking and payment processes to reduce load times.
-   - Implement **Caching** and Database Optimization to ensure efficient data operations and scalability.
- 
-### Q2 2025
- 
-7. **Integration and Extensions:**
-   - Integrate with additional **Third-Party Services** such as CRM systems, payment gateways, and marketing tools for expanded functionality.
-   - Develop **Custom Extensions** or add-ons based on user needs and feedback.
- 
-8. **User Feedback and Iteration:**
-   - Collect user feedback through surveys and usability tests to identify areas for improvement.
-   - Implement iterative changes and updates based on feedback to enhance the overall user experience.
- 
-9. **Documentation and Training:**
-   - Update **Documentation** to reflect new features and changes.
-   - Develop **Training Materials** and tutorials to help users and administrators make the most of the new functionalities.
- 
+
 ## Lessons Learned
  
 1. **Authentication and Role Management:**
