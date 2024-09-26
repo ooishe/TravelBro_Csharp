@@ -24,13 +24,23 @@ Before starting, ensure you have the following installed:
  
 2. **Access Database Files:**
    - Navigate to the "database" section in this repository.
-   - Download the SQL script files for each table.
- 
-3. **Execute SQL Scripts:**
-   - Open a new query window in SSMS.
-   - Copy and paste or directly open the SQL scripts from the downloaded files into the query window.
+   - Download the backup file.
+   - Copy and paste the backup file in the (C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\Backup) directory.
+   - Open SSMS and connect to the server
+   - Right click on the Database udner the server and go to Restore Database.
+     
+     ![image](https://github.com/user-attachments/assets/ec94d5ff-d779-4b08-82e5-73b0ceb70413)
+   - Select Device, for Database set the location to where the backup file is saved.
+     ![image](https://github.com/user-attachments/assets/6324971f-a6f6-4a8e-b421-4a43f3967799)
+   - Go to files and select Relocate all files to folder. Click Ok and the Database has been added to your server. 
+     ![image](https://github.com/user-attachments/assets/ebfcb200-6c6d-4af3-920c-e21fccd9d5a0)
 
-** SQL Query:**
+
+
+
+
+ 
+## SQL Query:
  
 #### user_prepack_id Table
 ```bash
@@ -153,22 +163,31 @@ SELECT
    
 ```
 
- 
-5. **Configure Connection String:**
-   - In the **app.config** or **web.config** file of your WinForms application, update the connection string with your SQL Server details:
- 
-   ```xml
-   <connectionStrings>
-     <add name="TrabelBroDB"
-          connectionString="Data Source=LAPTOP-FS3OVK5Q\SQLEXPRESS;Initial Catalog=TravelBro;Integrated Security=True;Encrypt=False"
-          providerName="System.Data.SqlClient" />
-   </connectionStrings>
-   ```
- 
-   - Replace `YOUR_SERVER_NAME` with the name of your SQL Server instance (for example, `localhost` or `.\SQLEXPRESS`).
- 
- 
+
+
+## Configure Connection String:
+   - In Visual Studio, after opening TravelBro file, go to Server Explorer.
+   - Right click on Data Connection and go to add connection.
+     
+     ![image](https://github.com/user-attachments/assets/e2d69c71-3405-42a1-b10f-cc73b34a9c7f)
+
+   - Put the server name and select the database name, here it's TravelBro.
+
+     ![image](https://github.com/user-attachments/assets/55b0596f-c35c-466f-885a-95391c972508)
+
+   - Click on Ok and the Database should apprear under the server name.
+   - Right click on the server name and go to the properties.
+     
+     ![image](https://github.com/user-attachments/assets/c64186be-2249-46ca-ab80-5829819ff21a)
+     
+   - Double click on the Connection String to copy it and paste it in the double qoutations where its needed.
+     
+     ![image](https://github.com/user-attachments/assets/97bd01ca-35b8-433d-9b9e-47fe29d0ecf9)
+     ![image](https://github.com/user-attachments/assets/0de16a19-52e2-4012-a521-f69b4afba1b3)
+
 Make sure the connection string is set up properly to ensure smooth communication between your application and the database.
+
+
  
 
 ## Application's Screenshots
@@ -264,14 +283,18 @@ Make sure the connection string is set up properly to ensure smooth communicatio
    - Multiple payment methods are available, including bKash, Nagad, Rocket, and Banking.
    - On booking confirmation, users can see the total bill and complete their payment.
   
+### Agency Features
 
- 
- 
-### Admin Features
- 
+- **Sign Up & Login / Logout:**
+   - Agencies can create a new account, log in, log out.
 
  - **Travel Package Management:**
-   - Admins can view and search customer, agency, package information and se overview of the whole system.
+   - Agency can add, view and update their pre-made travel packages.
+ 
+### Admin Features
+
+ - **Full access to system modules:**
+   - Admin can view and search customer, agency, package information and see overview of the whole system(including total users, agencies and transactions).
   
 ## Technology Used
  
@@ -301,13 +324,10 @@ Make sure the connection string is set up properly to ensure smooth communicatio
 ## FAQ
 
 **Q: How can I add more travel packages to the system?**
-- A:  To add travel packages, use the package management interface available in the Admin panel. Admins can input package details, including name, price, destination, and itinerary, directly into the system.
+- A:  Tuser cant add travel packages, although they can create their own customized package. Only agencies can create or push packages into the system.
 
 **Q: What should I do if I forget my password?**
 - A: Use the "Forgot Password" feature on the login page to reset your password. Follow the instructions sent to your registered email address.
-
-**Q: How do I change my email or contact information?**
-- A: Log in to your account and navigate to the profile settings. You can update your email and contact information from there.
 
 
 ## Acknowledgements
