@@ -324,7 +324,7 @@ Make sure the connection string is set up properly to ensure smooth communicatio
 ## FAQ
 
 **Q: How can I add more travel packages to the system?**
-- A:  Tuser cant add travel packages, although they can create their own customized package. Only agencies can create or push packages into the system.
+- A: User can't add travel packages, although they can create their own customized package. Only agencies can create or push packages into the system.
 
 **Q: What should I do if I forget my password?**
 - A: Use the "Forgot Password" feature on the login page to reset your password. Follow the instructions sent to your registered email address.
